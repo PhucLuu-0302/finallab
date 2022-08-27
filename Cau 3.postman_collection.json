@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "72841c57-b225-4d2f-9185-2fefbdf67c30",
+		"name": "Cau 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19976144"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "j_username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "j_password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://10.215.27.210/j_security_check",
+					"protocol": "https",
+					"host": [
+						"10",
+						"215",
+						"27",
+						"210"
+					],
+					"path": [
+						"j_security_check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get device",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://10.215.27.210/dataservice/device",
+					"protocol": "https",
+					"host": [
+						"10",
+						"215",
+						"27",
+						"210"
+					],
+					"path": [
+						"dataservice",
+						"device"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
